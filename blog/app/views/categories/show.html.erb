@@ -1,0 +1,10 @@
+<div class="container" style="margin: 0 auto;">
+	<h1 style="color:<%= @category.color %>;">
+	  <%= @category.name %>
+	</h1>
+	<div class="row">
+		<%= render @category.articles %>
+	</div>
+	<%= link_to 'Edit', edit_category_path(@category) %> |
+	<%= link_to 'Back', categories_path %>
+</div>
